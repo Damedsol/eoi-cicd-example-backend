@@ -1,6 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
-
+const port = process.env.PORT || 3000;
 dotenv.config()
 
 const app = express();
@@ -9,6 +9,6 @@ app.get('/', (req, res) => {
     res.send(`Estoy ahora mismo en la rama MAIN y tengo esta variable de entorno EOI ${process.env.EOI}`);
 });
 
-app.listen(3000, () => {
-    console.log('Example app listening on port 3000!');
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}!`);
 });
