@@ -7,7 +7,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.send(`Estoy ahora mismo en la rama MAIN y tengo esta variable de entorno EOI ${process.env.EOI}
-	esto es una prueba 2`);
+	esto es una prueba de deploy en heroku`);
 });
 
 app.listen(port, () => {
